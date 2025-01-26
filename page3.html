@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Réservation de voyage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <style>
+        /* Ajoutez ici votre style CSS personnalisé */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: orange;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 40px;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        
+        textarea {
+            height: 100px;
+        }
+        
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+        
+        .btn-back {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .btn-back a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Réservation de voyage</h1>
+    <form action="traitement.php" method="POST">
+        <div class="form-group">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+        </div>
+        <div class="form-group">
+            <label for="destination">Destination :</label>
+            <select id="destination" name="destination" required>
+                <option value="">Sélectionnez une destination</option>
+                <option value="France">France</option>
+                <option value="Namibie">Namibie</option>
+                <option value="Costa Rica">Costa Rica </option>
+                <option value="Etats-Unis">Etats-Unis </option>
+                <option value="Maroc">Maroc </option>
+                <option value="Grèce">Grèce </option>
+                <option value="Canada">Canada </option>
+                <option value="Corse">Corse</option>
+                <!-- Ajoutez d'autres options de destination ici -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="categorie">Catégorie :</label>
+            <select id="categorie" name="categorie" required>
+                <option value="">Sélectionnez une catégorie</option>
+                <option value="Paquebot">Paquebot</option>
+                <option value="Yatch">Yacht</option>
+                <option value="Voilier/Catamaran">Voilier/Catamaran</option>
+                <!-- Ajoutez d'autres options de catégorie ici -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="date_depart">Date de départ :</label>
+            <input type="date" id="date_depart" name="date_depart" required>
+        </div>
+        <div class="form-group">
+            <label for="date_retour">Date de retour :</label>
+            <input type="date" id="date_retour" name="date_retour" required>
+        </div>
+        <div class="form-group">
+            <label for="nb_personnes">Nombre de personnes :</label>
+            <input type="number" id="nb_personnes" name="nb_personnes" required>
+        </div>
+        <div class="form-group">
+            <label for="commentaires">Commentaires :</label>
+            <textarea id="commentaires" name="commentaires"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Réserver</button>
+        </div>
+    </form>
+    <div class="btn-back">
+        <a href="javascript:history.back()">Retour</a>
+    </div>
+</body>
+</html>

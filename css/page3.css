@@ -1,0 +1,86 @@
+body{
+
+background-color: orange;
+}
+
+
+center{
+
+    background-color: black;
+}
+.calendrier{
+
+
+    background-image: url("img/calendrier.jpg");
+    width: 600px;
+    height: 300px;
+    margin-top: 200px;
+}
+
+#meeting-time{
+    margin-top: 200px;
+    margin-left: 45%;
+}
+
+
+.date{
+
+    margin-left: 25%;
+    margin-top: 120%;
+    font-size: 3em;
+    text-decoration: underline;
+}
+
+.btn-back{
+
+    background-color: black;
+}
+
+
+/* Média query pour tous les types de taille d'écran */
+@media (max-width: 1024px) {
+    form {
+        padding: 10px;
+    }
+
+    .calendrier {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    #meeting-time {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .date {
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 2em;
+    }
+}
+
+/* Média query pour tous les types de taille d'écran */
+@media (min-width: 1025px) {
+    .calendrier {
+        width: 600px;
+        height: 300px;
+        margin-top: 200px;
+    }
+
+    #meeting-time {
+        margin-top: 200px;
+        margin-left: 45%;
+    }
+
+    .date {
+        margin-left: 25%;
+        margin-top: 120%;
+        font-size: 3em;
+        text-decoration: underline;
+    }
+
+    .btn-back {
+        background-color: black;
+    }

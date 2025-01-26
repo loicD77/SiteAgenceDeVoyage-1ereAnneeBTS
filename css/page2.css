@@ -1,0 +1,73 @@
+html, body, .container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+}
+
+th {
+  background-color: #f9a825;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+td {
+  background-color: #f5f5f5;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ff0000;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/id/955952680/fr/photo/avion-commerciale-de-passagers-volant-au-dessus-des-nuages.jpg?s=612x612&w=0&k=20&c=2nPU750Al4V5X01zp4vrA94Rae7uStC5eqQvWbSnp-k=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 20px;
+}
+
+.retour {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+/* Média query pour les écrans de taille inférieure à 768px (par exemple, smartphones en mode portrait) */
+@media (max-width: 767px) {
+  table {
+    font-size: 14px;
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Média query pour les écrans de taille comprise entre 768px et 991px (par exemple, tablettes en mode paysage) */
+@media (min-width: 768px) and (max-width: 991px) {
+  table {
+    font-size: 16px;
+  }
+}
+
+/* Média query pour les écrans de taille supérieure ou égale à 992px (par exemple, ordinateurs de bureau) */
+@media (min-width: 992px) {
+  table {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,57 @@
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <title>Melun Voyage - Agence de voyages</title>
+</head>
+<body>
+  <header>
+    <h1>Melun Voyages</h1> 
+    <img class="logo" src="img/Selectour2.png" alt="Logo Melun Voyage">
+    <div class="resume">
+      <div class="tab">
+        <a class="tablink" href="page2.html">PAGE DES HORAIRES</a>
+        <a class="tablink" href="page3.html">PAGE DE RÉSERVATIONS</a>
+      </div>
+      <h2>Bienvenue sur le site officiel de notre agence !</h2>
+    </div>
+  </header>
+  
+  <div class="slideshow-container"> 
+    <div class="slideshow">
+      <img class="voyage1 active" src="img/v1.jpg" alt="Voyage 1">
+      <img class="voyage2" src="img/v2.jpg" alt="Voyage 2">
+      <img class="voyage3" src="img/v3.jpg" alt="Voyage 3">
+      <img class="voyage4" src="img/v4.jpg" alt="Voyage 4">
+    </div>
+
+    <div class="texteàcôté">
+      <p>Bienvenue dans notre agence située à Melun. Nous proposons une large sélection de voyages en Europe et en Asie. Profitez de nos promotions exceptionnelles et découvrez nos offres attractives. Notre site officiel de voyage vous propose de nombreuses options d'achat pour répondre à vos besoins et envies.</p>
+      <br>
+      <a href="page3.html" class="cta-button">Réservez dès maintenant</a>
+    </div>
+  </div>
+  <footer>
+    25 Bd Gambetta, 77000 Melun<br>
+    &copy; Loïc Darras BTS SIO 12 - 2023 - Tous droits réservés
+  </footer>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var images = document.querySelectorAll('.slideshow img');
+      var currentImageIndex = 0;
+
+      function showNextImage() {
+        images[currentImageIndex].classList.remove('active');
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.add('active');
+      }
+
+      // Change image every 3 seconds
+      setInterval(showNextImage, 3000);
+    });
+  </script>
+</body>
+</html>

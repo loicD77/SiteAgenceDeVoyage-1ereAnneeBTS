@@ -1,0 +1,17 @@
+{
+  "name": "api-voyage",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "KEY": "VALUE"
+  },
+  "addons": [
+    "addon_name"
+  ],
+  "scripts": {
+    "postdeploy": "npm run build"
+  }
+}

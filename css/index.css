@@ -1,0 +1,267 @@
+  /* Ajoutez ici votre style CSS personnalisé */
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f1f1f1;
+}
+
+header {
+background-color: #333;
+padding: 20px;
+color: #fff;
+text-align: center;
+background-image: url("../img/background.jpg");
+background-size: cover;
+}
+
+.logo {
+display: block;
+margin: 0 auto;
+max-width: 200px;
+}
+
+.resume {
+text-align: center;
+margin-top: 40px;
+color: #333;
+}
+
+.slideshow-container {
+display: flex;
+margin-top: 40px;
+}
+
+.texteàcôté {
+flex: 1;
+padding: 20px;
+width: 50%;
+height: 300px;
+overflow: hidden;
+}
+
+.slideshow {
+position: relative;
+width: 50%;
+height: 300px;
+overflow: hidden;
+}
+
+.slideshow img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 1s ease;
+}
+
+.slideshow img.active {
+opacity: 1;
+}
+
+footer {
+background-color: grey;
+padding: 10px;
+text-align: center;
+color: #333;
+font-size: 14px;
+font-weight: bold;
+}
+
+h1 {
+color: white;
+background-color: orange;
+width: 350px;
+text-decoration: underline;
+font-family: "Brush Script MT", Brush Script Std, cursive;
+}
+
+h2 {
+color: orange;
+background-color: white;
+width: 530px;
+}
+
+.tab {
+overflow: hidden;
+background-color: #f1f1f1;
+width: 450px;
+}
+
+.tablink {
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+color: black;
+text-decoration: none;
+}
+
+.tablink:hover {
+background-color: #ddd;
+}
+
+.tablink.active {
+background-color: #ccc;
+}
+
+.voyage2 {
+width: 80px;
+height: 80px;
+}
+
+.titreSecondaire {
+background-color: white;
+}
+
+.texteàcôté {
+background-color: orange;
+width: 350px;
+height: 260px;
+float: left;
+}
+
+.bas {
+background-color: white;
+width: 550px;
+}
+
+.slideshow {
+position: relative;
+max-width: 500px;
+max-height: 600px;
+margin: auto;
+}
+
+.slideshow img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 1s ease;
+}
+
+.slideshow img.active {
+display: block;
+}
+
+.slideshow .prev,
+.slideshow .next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+font-size: 24px;
+font-weight: bold;
+color: #ffffff;
+background-color: #000000;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+.slideshow .prev {
+left: 10px;
+}
+
+.slideshow .next {
+right: 10px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+
+  h2 {
+width: 320px;
+}
+
+.logo {
+max-width: 150px;
+}
+
+.resume {
+font-size: 14px;
+}
+
+.slideshow-container {
+flex-direction: column;
+width: auto;
+height: auto;
+    flex-direction: column;
+    align-items: center; /* Alignement vertical */
+}
+
+
+
+.slideshow {
+width: 100%;
+order: 1;
+}
+
+.texteàcôté {
+height: auto;
+margin-bottom: 20px;
+  width: 91%; /* Ajustement de la largeur */
+    order: 2; /* Changement de l'ordre d'affichage */
+    margin-bottom: 0; /* Suppression de la marge inférieure */
+}
+
+
+}
+
+@media only screen and (max-width: 480px) {
+.logo {
+max-width: 120px;
+}
+
+header {
+padding: 10px;
+}
+
+h1 {
+width: 250px;
+}
+
+h2 {
+width: 300px;
+}
+
+.tab {
+width: 300px;
+}
+
+
+.bas {
+width: 320px;
+}
+
+
+.slideshow-container {
+flex-direction: column;
+width: auto;
+height: auto;
+    flex-direction: column;
+    align-items: center; /* Alignement vertical */
+}
+
+
+
+.slideshow {
+width: 100%;
+order: 1;
+}
+
+.texteàcôté {
+height: auto;
+width: 91%; /* Ajustement de la largeur */
+order: 2; /* Changement de l'ordre d'affichage */
+margin-bottom: 0; /* Suppression de la marge inférieure */
+}
+}
+
+/* Fin des media queries */
